@@ -1,0 +1,51 @@
+const taxe_rate = 0.08;
+const phone_price = 100;
+const accesory_price = 10;
+const mental_treshold = 500;
+
+
+var bank_account = 1000;
+var total_price = phone_price + taxe_rate;
+
+
+function TaxCalculate(atm){
+    
+    
+    atm = atm + ( atm * taxe_rate);
+    
+
+}
+
+
+function printPrice(){
+    
+    console.log(total_price.toFixed(2) + "€");
+    
+}
+
+
+while (mental_treshold > total_price){
+    
+    total_price = total_price + phone_price + accesory_price;
+    
+}
+
+
+
+TaxCalculate(total_price);
+
+if (total_price < bank_account) {
+    
+    console.log("Je prends ces téléphones");
+    
+    
+}
+
+else{
+    
+    console.log("Hum hum...")
+}
+
+total_price = printPrice();
+
+console.log(total_price);
