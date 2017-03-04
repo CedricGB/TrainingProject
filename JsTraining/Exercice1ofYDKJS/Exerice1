@@ -5,7 +5,7 @@ const mental_treshold = 500;
 
 
 var bank_account = 1000;
-var total_price = phone_price + taxe_rate;
+var total_price = phone_price + accesory_price;
 
 
 function TaxCalculate(atm){
